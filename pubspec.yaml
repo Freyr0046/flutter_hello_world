@@ -1,0 +1,62 @@
+name: flutter_hello_world
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 申請權限
+  permission_handler: ^10.2.0
+  # 拍照
+  camera: 0.10.5+2
+  #  找到存儲圖像的正確路徑
+  path_provider: 2.0.15
+  #  創建適用於任何平台的路徑。
+  path: 1.8.3
+  #  儲存至相簿
+  gallery_saver: ^2.3.2
+
+  flutter_lints: ^2.0.0
+  #  多圖像選擇器
+  #  過時
+  #  multiple_images_picker: ^1.0.1
+  multi_image_picker: ^4.6.0-rc.3
+
+  http: ^0.13.3
+  #  progress_hud: ^1.1.0
+  flutter_progress_hud: ^2.0.2
+  fluttertoast: 8.2.2
+
+  ##1：使用本地端Package
+  #  package name:
+  #    path: #可用相對或絕對路徑
+  ##2：使用Git引用(package在git專案網址的根目錄)
+  #  package name2:
+  #    git:
+  #      url: git://github.com/....
+  ##3：使用Git引用(package在git專案網址下的資料夾)
+  #  package name3:
+  #    git:
+  #      url: git://github.com/...
+  #      path: 資料夾路徑
+
+#  cupertino_icons: ^1.0.2
+  firebase_core: ^2.13.1
+  firebase_storage: ^11.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images2/menu.png
+  #   - images/a_dot_ham.jpeg
